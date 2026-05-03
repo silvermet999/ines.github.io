@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:anytype:schema:2026-03-17:type-page:ver-1.0",
+  "type": "object",
+  "title": "Page",
+  "x-app": "Anytype",
+  "x-icon-name": "document",
+  "x-plural": "Pages",
+  "x-schema-version": "1.0",
+  "x-type-key": "page",
+  "properties": {
+    "id": {
+      "description": "Unique identifier of the Anytype object",
+      "readOnly": true,
+      "type": "string",
+      "x-hidden": true,
+      "x-key": "id",
+      "x-order": 0
+    },
+    "Object type": {
+      "const": "Page",
+      "readOnly": true,
+      "type": "string",
+      "x-format": "object",
+      "x-hidden": true,
+      "x-key": "type",
+      "x-order": 1
+    },
+    "Created by": {
+      "items": {
+        "type": "string"
+      },
+      "readOnly": true,
+      "type": "array",
+      "x-format": "object",
+      "x-hidden": true,
+      "x-key": "creator",
+      "x-order": 2
+    },
+    "Creation date": {
+      "format": "date",
+      "readOnly": true,
+      "type": "string",
+      "x-format": "date",
+      "x-hidden": true,
+      "x-key": "createdDate",
+      "x-order": 3
+    },
+    "Emoji": {
+      "type": "string",
+      "x-format": "emoji",
+      "x-hidden": true,
+      "x-key": "iconEmoji",
+      "x-order": 4
+    },
+    "Image": {
+      "description": "Path to the file in the export",
+      "type": "string",
+      "x-format": "file",
+      "x-hidden": true,
+      "x-key": "iconImage",
+      "x-order": 5
+    },
+    "Cover image or color": {
+      "type": "string",
+      "x-format": "longtext",
+      "x-hidden": true,
+      "x-key": "coverId",
+      "x-order": 6
+    }
+  }
+}
