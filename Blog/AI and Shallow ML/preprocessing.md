@@ -1,12 +1,8 @@
 ---
-# yaml-language-server: $schema=schemas/page.schema.json
-Object type:
-    - Page
-Created by:
-    - silver
-Creation date: "2025-08-17T12:28:11Z"
-id: bafyreialuctq4lmrycetoj4v56ijhexom7wockt2wnk5izoqjfxuyrcwru
+layout: default
+title: AI and shallow ML
 ---
+
 # Preprocessing   
 ## Term Freq - Inverse Doc Freq (TF-IDF)   
 - Bag of word algo → order of words doesn’t matter
