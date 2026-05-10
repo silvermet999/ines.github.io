@@ -1,7 +1,8 @@
 ---
 layout: default
-title: AI & Shallow ML: Model Training
+title: AI and shallow ML
 ---
+
 # Model Training   
 ## Scenarios   
 - If training loss is increasing with high variance and the val loss is also increasing => decrease LR
