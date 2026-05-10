@@ -1,11 +1,6 @@
 ---
-# yaml-language-server: $schema=schemas/page.schema.json
-Object type:
-    - Page
-Created by:
-    - silver
-Creation date: "2025-08-17T12:28:46Z"
-id: bafyreic5nypsf46oacx5ccycmarcmiogkkrakdjplciuklijuhifhm4xti
+layout: default
+title: AI & Shallow ML: Model Training
 ---
 # Model Training   
 ## Scenarios   
