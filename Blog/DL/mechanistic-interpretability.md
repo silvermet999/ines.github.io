@@ -142,7 +142,18 @@ $$
 - In contribution plot: large positive and negative vals in the first and last layer => key contributions
    
 - In first layer: strong + contribution => embed , in the second layer: strong - contribution => attention putput
-=> The model's embedding and unembedding vectors are the same => the input strongly pred itself as the output (nature of dot)   
+=> The model's embedding and unembedding vectors are the same => the input strongly pred itself as the output (nature of dot)
+
+- Embeddings: token -> vector /text -> hidden state
+- Unembedding: vector -> token prob / hidden state -> text
+- 
+- A direct result of using prisms is having a linear projection that maps val embedding vector to candidates unmebedded vectors
+- The gap btw the current val & other vals is important
+- Combined effect of neurons might pred the corr answer
+-> Neurons' contributions to the target logits are linear projections onto diff target token unembedding vectors
+=> The neuron activity patterns are likely encoded in the target token unembeddings
+- The embeddings projected to 2D using PCA => 2D projection of digit unembedding vectors
+=> Transformers encode templates for outputs in the unembedding space -> MLP selectively reads these templates based on W_down (linear projection) -> by triggering a specific combination of neurons (each representing a template), the ntw ensures the logits reach their max value for tokens with the highest prob
    
 *credits: *   
 [index.pdf](https://neuralblog.github.io/logit-prisms/index.pdf)    
